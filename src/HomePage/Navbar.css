@@ -1,0 +1,85 @@
+.navbar {
+   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)),
+    url("../Images/Bgimg2.png") center/cover no-repeat;
+  color: #ffffff;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  transition: opacity 150ms ease;
+}
+
+.brand:hover {
+  opacity: 0.8;
+}
+
+.logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.brand-name {
+  font-weight: 700;
+  color: #B9975D; /* Deep Gold */
+  font-size: 1.125rem;
+  letter-spacing: 0.5px;
+}
+
+.tagline {
+  font-size: 0.75rem;
+  color: #B9975D;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.4rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+.nav-links a:hover {
+  background: rgba(185,151,93,0.12);
+  color: #B9975D;
+}
+
+@media (max-width: 720px) {
+  .nav-links {
+    display: none;
+  }
+}
